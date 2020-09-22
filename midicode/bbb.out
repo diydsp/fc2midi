@@ -1,0 +1,30 @@
+argv[1]: bb.mid.
+argv[2]: bbb.it.
+MIDI file header
+----------------
+Length    :0x00000006.
+Format    :0x0001.
+NumTracks :0x0002.
+PPQN      :0x0180.
+Track #0. (zero-based)
+len    :0x0000001f.
+time:  00000000:Special non-MIDI event: Time Signature  : (0x04,0x02,0x18,0x08)
+time:  00000000:Special non-MIDI event: Tempo           : (0x06,0x8a,0x1b)
+time:  00000000:Special non-MIDI event: Text message type 0x03,len 0x08
+SEQ00001
+time:  00000000:Special non-MIDI event: End of Track.
+Track #1. (zero-based)
+len    :0x0000002b.
+time:  00000000:controller:       (0xb0,0x00,0x00).
+time:  00000000:controller:       (0xb0,0x20,0x00).
+time:  00000000:program change:   (0xc0,0x01).
+time:  00000000:controller:       (0xb0,0x07,0x7f).
+time:  00000000:controller:       (0xb0,0x0a,0x40).
+time:  00000000:controller:       (0xb0,0x01,0x00).
+time:  00000000:controller:       (0xb0,0x0b,0x7f).
+time:  00000000:controller:       (0xb0,0x46,0x00).
+time:  00000000:controller:       (0xb0,0x00,0x40).
+time:  00000000:note on:          (0x90,0x18,0x7f).
+time:  00000012:note on:          (0x90,0x16,0x7f).
+time:  00000018:note off:         (0x80,0x7f,0x00).
+time:  00003fc7:note off:         (0x80,0x00,0xff).

@@ -1,0 +1,528 @@
+Song Name: .
+OrdNum:    2.
+InsNum:    0.
+SmpNum:    1.
+PatNum:    1.
+
+Cwt   :    2.22
+Cmwt  :    2.20
+
+Flags :    0x0009.
+	Stereo
+	Vol0MixOptimiztions: Off
+	Use samples
+	Linear Slides
+	IT Effects
+	No link FX G mem w/ E/F
+	Do not use MIDI pitch controller
+	Do not request embedded MIDI config
+Special:   0x0006.
+	no song message
+	.
+	.
+	No MIDI config embedded
+
+GV    :    128.
+MV    :    48.
+IS    :    6.
+IT    :    95.
+Sep   :    128.
+PWD   :    0.
+
+MsgLgth:   0.
+MsgOffset: 00000000.
+
+Channel Pan:
+0000: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+0010: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+0020: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+0030: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+Channel Volume:
+0000: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+0010: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+0020: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+0030: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+
+Orders:
+0000: ff ff 
+
+OffsetInst:
+OffsetSamp:
+	0x000000d4.
+OffsetPatt:
+	0x00000124.
+len_offset is 18.
+delta time len:1.
+delta time len:1.
+delta time len:1.
+delta time len:1.
+from writeTrkLen,len_offset is 18.
+Pattern Data
+------------
+offset    :0x0124.
+length    :0x008a.
+rows      :0x40.
+Pos: 0x00.
+channel = 0x00.
+Note   : 0x46
+Inst   : 0x01
+Pos: 0x00.
+channel = 0x01.
+Note   : 0x4d
+Inst   : 0x01
+Pos: 0x00.
+Pos: 0x01.
+Pos: 0x02.
+Pos: 0x03.
+Pos: 0x04.
+channel = 0x00.
+Note   : 0x48
+Same inst.
+Pos: 0x04.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x04.
+Pos: 0x05.
+Pos: 0x06.
+channel = 0x00.
+Note   : 0x46
+Same inst.
+Pos: 0x06.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x06.
+Pos: 0x07.
+Pos: 0x08.
+Pos: 0x09.
+Pos: 0x0a.
+channel = 0x00.
+Note   : 0x43
+Same inst.
+Pos: 0x0a.
+channel = 0x01.
+Note   : 0x4f
+Same inst.
+Pos: 0x0a.
+Pos: 0x0b.
+Pos: 0x0c.
+channel = 0x00.
+Note   : 0x45
+Same inst.
+Pos: 0x0c.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x0c.
+Pos: 0x0d.
+Pos: 0x0e.
+Pos: 0x0f.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x0f.
+Pos: 0x10.
+channel = 0x00.
+Note   : 0x46
+Same inst.
+Pos: 0x10.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x10.
+Pos: 0x11.
+Pos: 0x12.
+channel = 0x00.
+Note   : 0x45
+Same inst.
+Pos: 0x12.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x12.
+Pos: 0x13.
+Pos: 0x14.
+Pos: 0x15.
+Pos: 0x16.
+channel = 0x00.
+Note   : 0x41
+Same inst.
+Pos: 0x16.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x16.
+Pos: 0x17.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x17.
+Pos: 0x18.
+channel = 0x00.
+Note   : 0x43
+Same inst.
+Pos: 0x18.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x18.
+Pos: 0x19.
+Pos: 0x1a.
+Pos: 0x1b.
+channel = 0x01.
+Note   : 0x48
+Same inst.
+Pos: 0x1b.
+Pos: 0x1c.
+channel = 0x00.
+Note   : 0x41
+Same inst.
+Pos: 0x1c.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x1c.
+Pos: 0x1d.
+Pos: 0x1e.
+channel = 0x00.
+Note   : 0x40
+Same inst.
+Pos: 0x1e.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x1e.
+Pos: 0x1f.
+Pos: 0x20.
+Pos: 0x21.
+Pos: 0x22.
+channel = 0x00.
+Note   : 0x41
+Same inst.
+Pos: 0x22.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x22.
+Pos: 0x23.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x23.
+Pos: 0x24.
+channel = 0x00.
+Note   : 0x43
+Same inst.
+Pos: 0x24.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x24.
+Pos: 0x25.
+Pos: 0x26.
+Pos: 0x27.
+Pos: 0x28.
+Pos: 0x29.
+Pos: 0x2a.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x2a.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x2a.
+Pos: 0x2b.
+Pos: 0x2c.
+Pos: 0x2d.
+Pos: 0x2e.
+Pos: 0x2f.
+Pos: 0x30.
+channel = 0x00.
+Comm/Val: 0x00, 0x02
+Pos: 0x30.
+Pos: 0x31.
+Pos: 0x32.
+Pos: 0x33.
+Pos: 0x34.
+Pos: 0x35.
+Pos: 0x36.
+Pos: 0x37.
+Pos: 0x38.
+Pos: 0x39.
+Pos: 0x3a.
+Pos: 0x3b.
+Pos: 0x3c.
+Pos: 0x3d.
+Pos: 0x3e.
+Pos: 0x3f.
+0000: 81 03 46 01 82 03 4d 01 00 00 00 00 81 21 48 82 
+0010: 21 4c 00 00 01 46 02 4d 00 00 00 00 01 43 02 4f 
+0020: 00 00 01 45 02 4c 00 00 00 02 4d 00 01 46 02 4a 
+0030: 00 00 01 45 02 4c 00 00 00 00 01 41 02 4d 00 02 
+0040: 4c 00 01 43 02 4a 00 00 00 02 48 00 01 41 02 4a 
+0050: 00 00 01 40 02 4c 00 00 00 00 01 41 02 4d 00 02 
+0060: 4c 00 01 43 02 4a 00 00 00 00 00 00 81 30 82 30 
+0070: 00 00 00 00 00 00 81 08 02 00 00 00 00 00 00 00 
+0080: 00 00 00 00 00 00 00 00 00 00 
+len_offset is 57.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:1.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:2.
+delta time len:1.
+event len:2.
+Extracting channel 0.
+Pos: 0x00.
+channel = 0x00.
+Note   : 0x46
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Inst   : 0x01
+Pos: 0x00.
+channel = 0x01.
+Note   : 0x4d
+Inst   : 0x01
+Pos: 0x00.
+Pos: 0x01.
+Pos: 0x02.
+Pos: 0x03.
+Pos: 0x04.
+channel = 0x00.
+Note   : 0x48
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x04.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x04.
+Pos: 0x05.
+Pos: 0x06.
+channel = 0x00.
+Note   : 0x46
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x06.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x06.
+Pos: 0x07.
+Pos: 0x08.
+Pos: 0x09.
+Pos: 0x0a.
+channel = 0x00.
+Note   : 0x43
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x0a.
+channel = 0x01.
+Note   : 0x4f
+Same inst.
+Pos: 0x0a.
+Pos: 0x0b.
+Pos: 0x0c.
+channel = 0x00.
+Note   : 0x45
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x0c.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x0c.
+Pos: 0x0d.
+Pos: 0x0e.
+Pos: 0x0f.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x0f.
+Pos: 0x10.
+channel = 0x00.
+Note   : 0x46
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x10.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x10.
+Pos: 0x11.
+Pos: 0x12.
+channel = 0x00.
+Note   : 0x45
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x12.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x12.
+Pos: 0x13.
+Pos: 0x14.
+Pos: 0x15.
+Pos: 0x16.
+channel = 0x00.
+Note   : 0x41
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x16.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x16.
+Pos: 0x17.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x17.
+Pos: 0x18.
+channel = 0x00.
+Note   : 0x43
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x18.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x18.
+Pos: 0x19.
+Pos: 0x1a.
+Pos: 0x1b.
+channel = 0x01.
+Note   : 0x48
+Same inst.
+Pos: 0x1b.
+Pos: 0x1c.
+channel = 0x00.
+Note   : 0x41
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x1c.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x1c.
+Pos: 0x1d.
+Pos: 0x1e.
+channel = 0x00.
+Note   : 0x40
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x1e.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x1e.
+Pos: 0x1f.
+Pos: 0x20.
+Pos: 0x21.
+Pos: 0x22.
+channel = 0x00.
+Note   : 0x41
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x22.
+channel = 0x01.
+Note   : 0x4d
+Same inst.
+Pos: 0x22.
+Pos: 0x23.
+channel = 0x01.
+Note   : 0x4c
+Same inst.
+Pos: 0x23.
+Pos: 0x24.
+channel = 0x00.
+Note   : 0x43
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x24.
+channel = 0x01.
+Note   : 0x4a
+Same inst.
+Pos: 0x24.
+Pos: 0x25.
+Pos: 0x26.
+Pos: 0x27.
+Pos: 0x28.
+Pos: 0x29.
+Pos: 0x2a.
+channel = 0x00.
+Same note.
+scribing to MIDIfile.
+delta time len:1.
+event len:2.
+Same inst.
+Pos: 0x2a.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x2a.
+Pos: 0x2b.
+Pos: 0x2c.
+Pos: 0x2d.
+Pos: 0x2e.
+Pos: 0x2f.
+Pos: 0x30.
+channel = 0x00.
+Comm/Val: 0x00, 0x02
+Pos: 0x30.
+Pos: 0x31.
+Pos: 0x32.
+Pos: 0x33.
+Pos: 0x34.
+Pos: 0x35.
+Pos: 0x36.
+Pos: 0x37.
+Pos: 0x38.
+Pos: 0x39.
+Pos: 0x3a.
+Pos: 0x3b.
+Pos: 0x3c.
+Pos: 0x3d.
+Pos: 0x3e.
+Pos: 0x3f.
+delta time len:1.
+from writeTrkLen,len_offset is 57.

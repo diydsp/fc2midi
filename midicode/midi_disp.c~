@@ -1,0 +1,342 @@
+#include <stdio.h>
+#include "useful.h"
+#include "midi_types.h"
+#include "midi_disp.h"
+#include "companies.h"
+#include "controlnum.h"
+
+void midi_dispHdr(MIDIHdr *mh)
+{
+  printf("MIDI file header\n");
+  printf("----------------\n");
+  printf("Length    :0x%08lx.\n",mh->len);
+  printf("Format    :0x%04x.\n",mh->Format);
+  printf("NumTracks :0x%04x.\n",mh->NumTracks);
+  printf("PPQN      :0x%04x.\n",mh->PPQN);
+  printf("\n");
+}
+
+void midi_dispTrk(MIDITrk *trk)
+{
+  unsigned int index=0;
+  unsigned long time=0,deltatime;
+  byte token,token2,token3,status=NONE;
+  byte chan,note,vel,cont,txtlen;
+  byte val,val2,val3,val4,val5;
+  int readdelta=1;
+  int i,p;
+  long longvalue;
+  char ManuID[80],ControlName[80],NoteName[10];
+  
+  printf("len :  0x%08lx.\n",trk->len);
+  
+  do
+  {
+    if(readdelta==1)
+    {
+      // read delta time
+      index+=midi_readDeltaTime(&trk->data[index],&deltatime);
+      time +=deltatime;
+      printf("time:  %08lx:",time);
+    }
+
+    // read event
+    token = trk->data[index++];
+
+    // first look for MIDI Status Msgs
+    if( (token>=0x80) && (token<=0xEF) )
+    {
+      readdelta=0;
+      switch( (token&0xF0))
+      {
+      case 0x80:   // Note Off
+	chan = token&0x0F;
+	status = NOTEOFF;
+	continue;
+
+      case 0x90:   // Note On
+	chan = token&0x0F;
+	status = NOTEON;
+	continue;
+
+      case 0xA0:   // After Touch
+	chan = token&0x0F;
+	status = AFTERTOUCH;
+	continue;
+
+      case 0xB0:   // Controller
+	chan = token&0x0F;
+	status = CONTROL;
+	continue;
+
+      case 0xC0:   // Program Change
+	chan = token&0x0F;
+	status = PROGRAM;
+	continue;
+
+      case 0xD0:   // Channel Pressure
+	chan = token&0x0F;
+	status = PRESSURE;
+	continue;
+
+      case 0xE0:   // Pitch Wheel
+	chan = token&0x0F;
+	status = PITCHWHEEL;
+	continue;
+
+      default:
+	printf("oops. THIS SHOUULD HAVE NEEEVER HAPPENED ARGH!\n");
+	continue;
+      }
+    }
+    
+    // Next look for System Common and Realtime messages
+    if( (token>=0xF0) && (token<=0xFE) )
+    {
+      readdelta=1;
+      switch(token)
+      {
+      case 0xF0: // Sysex (oh joy)
+	index+=midi_readDeltaTime(&trk->data[index],&longvalue);
+	printf("Sysex Message, len 0x%08lx\n",longvalue);
+
+	// Get Manufacturer ID
+	val=trk->data[index++];
+	LookupManuID(val,ManuID);
+	printf("Manufacturer ID 0x%02x = %s\n",val,ManuID);
+
+	printf("%02x %02x ",0xF0,val);
+	for(p=2,i=0;i<longvalue-1;i++)
+	{
+	  val=trk->data[index++];
+	  printf("%02x ",val);
+	  p++;
+	  if( (p>1) && (((p)%8)==0))printf("\n");
+	}
+	printf("\n");
+	continue;
+	
+      case 0xF1: // MTC Quarter Frame Message
+	val  = trk->data[index++];
+	printf("MTC 1/4 Frame Msg : (0x%02x,0x%02x,0x%02x).\n",token,val);
+	continue;
+	
+      case 0xF2: // Song Position Pointer
+	val  = trk->data[index++];
+	val2 = trk->data[index++];
+	printf("Song Pos Ptr      : (0x%02x,0x%02x,0x%02x).\n",token,val,val2);
+	continue;
+
+      case 0xF3: // Song Position Pointer
+	val  = trk->data[index++];
+	printf("Song Select       : (0x%02x,0x%02x).\n",token,val);
+	continue;
+
+      case 0xF6: // Tune Request
+	printf("Tune Request      : (0x%02x).\n",token);
+	continue;
+
+      case 0xF8: // MIDI Clock
+	printf("MIDI Clk(1/96 beat): (0x%02x).\n",token);
+	continue;
+
+      case 0xFA: // MIDI Start
+	printf("MIDI Start        : (0x%02x).\n",token);
+	continue;
+
+      case 0xFB: // MIDI Continue
+	printf("MIDI Continue     : (0x%02x).\n",token);
+	continue;
+
+      case 0xFC: // MIDI Stop
+	printf("MIDI Stop          : (0x%02x).\n",token);
+	continue;
+	
+      case 0xFE: // MIDI Active Sense
+	printf("MIDI Act. Sense    : (0x%02x).\n",token);
+	continue;
+
+      default:
+	printf("man, should have NEVER made it HERE!\n");
+	continue;
+      }
+    }
+
+    // Now look for special non-MIDI events
+    if(token==0xFF)
+    {
+      readdelta=1;
+      printf("Special non-MIDI event: ");
+      
+      val  = trk->data[index++];
+      if( (val>=0x01) && (val<=0x07) )  // text msgs
+      {
+	txtlen = trk->data[index++];
+	printf("Text message type 0x%02x,len 0x%02x\n",val,txtlen);
+	printf("\"");
+	for(i=0;i<txtlen;i++)
+	{
+	  val = trk->data[index++];
+	  printf("%c",val);
+	  if( (i>1) && ((i%32)==0))printf("\n");
+	}
+	printf("\"\n");
+	continue;
+      } else
+      {
+	readdelta=1;
+	val2 = trk->data[index++];
+	switch(val)
+	{
+	case 0x00:if(val2==0x02) // Sequence Number
+	  {
+	    val  = trk->data[index++];
+	    val2 = trk->data[index++];
+	    printf("Sequence Number : (0x%02x,0x%02x)\n",val,val2);
+	  }
+	continue;
+
+	case 0x20:if(val2==0x01) // MIDI Channel
+	  {
+	    val  = trk->data[index++];
+	    printf("MIDI Channel    : (0x%02x)\n",val);
+	  }
+	continue;
+	
+	case 0x21:if(val2==0x01) // MIDI Port
+	  {
+	    val  = trk->data[index++];
+	    printf("MIDI Port       : (0x%02x)\n",val);
+	  }
+	continue;
+
+	case 0x2F:if(val2==0x00) // End of Track (yay!)
+	  {
+	    printf("End of Track.\n");
+	  }
+	continue;
+
+	case 0x51:if(val2==0x03) // Tempo
+	  {
+	    val  = trk->data[index++];
+	    val2 = trk->data[index++];
+	    val3 = trk->data[index++];
+	    printf("Tempo           : (0x%02x,0x%02x,0x%02x)\n",val,val2,val3);
+	  }
+	continue;
+
+	case 0x54:if(val2==0x05) // SMPTE offset
+	  {
+	    val  = trk->data[index++];
+	    val2 = trk->data[index++];
+	    val3 = trk->data[index++];
+	    val4 = trk->data[index++];
+	    val5 = trk->data[index++];
+	    printf("SMPTE Offset    : (0x%02x,0x%02x,0x%02x,0x%02x,0x%02x)\n",
+		   val,val2,val3,val4,val5);
+	  }
+	continue;
+
+	case 0x58:if(val2==0x04) // Time Sig
+	  {
+	    val  = trk->data[index++];
+	    val2 = trk->data[index++];
+	    val3 = trk->data[index++];
+	    val4 = trk->data[index++];
+	    printf("Time Signature  : (0x%02x,0x%02x,0x%02x,0x%02x)\n",
+		   val,val2,val3,val4);
+	  }
+	continue;
+
+	case 0x59:if(val2==0x02) // Key Signature
+	  {
+	    val  = trk->data[index++];
+	    val2 = trk->data[index++];
+	    printf("Key Signature   : (0x%02x,0x%02x)\n",val,val2);
+	  }
+	continue;
+
+	case 0x7F: // Proprietary Event
+	  {
+	    txtlen = trk->data[index++];
+	    printf("Proprietary Event:\n");
+	    for(i=0;i<txtlen;i++)
+	    {
+	      val  = trk->data[index++];
+	    }
+	  }
+	    
+	  continue;
+	}
+      }
+    }
+    
+    // By default, it must be data from the last status command
+    readdelta=1;
+    switch(status)
+    {
+    case NOTEOFF:
+      note = token;
+      vel  = trk->data[index++];
+      LookupNoteNum(note,NoteName);
+      printf("note off:         (0x%02x,0x%02x,0x%02x) %s.\n",status+chan,note,vel,NoteName);
+      continue;
+
+    case NOTEON:
+      note = token;
+      vel  = trk->data[index++];
+      LookupNoteNum(note,NoteName);
+      printf("note on:          (0x%02x,0x%02x,0x%02x) %s.\n",status+chan,note,vel,NoteName);
+      continue;
+
+    case AFTERTOUCH:
+      note = token;
+      vel  = trk->data[index++];
+      printf("after touch:      (0x%02x,0x%02x,0x%02x).\n",status+chan,note,vel); 
+      continue;
+      
+    case CONTROL:
+      cont = token;
+      val  = trk->data[index++];
+      LookupContNum(cont,ControlName);
+      printf("controller:       (0x%02x,0x%02x,0x%02x) %s.\n",status+chan,cont,val,ControlName);
+      continue;
+
+    case PROGRAM:
+      val  = token;
+      printf("program change:   (0x%02x,0x%02x).\n",status+chan,val);
+      continue;
+
+    case PRESSURE:
+      val  = token;
+      printf("channel pressure: (0x%02x,0x%02x).\n",status+chan,val);
+      continue;
+
+    case PITCHWHEEL:
+      val  = token;
+      val2 = trk->data[index++];
+      printf("pitch wheel:      (0x%02x,0x%02x,0x%02x).\n",status+chan,val,val2);
+      continue;
+      
+    default:
+      printf("unknown status message or NONE. %02x\n",status);
+      continue;
+    }
+  } while (index < trk->len);
+  printf("\n");
+}
+
+void LookupNoteNum(byte val,char *str)
+{
+  char *note= "CCDDEFFGGAAB";
+  char *acc = "-#-#--#-#-#-";
+  
+  int oct,num;
+  oct=(val/12)-1;
+  num=val%12;
+  
+  str[0] = note[num];
+  str[1] =  acc[num];
+  str[2] = '0'+oct;
+  str[3] = '\0';
+}

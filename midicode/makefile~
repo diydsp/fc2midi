@@ -1,0 +1,75 @@
+# converts Impulse Tracker files to MIDI
+OBJS1 = it2midi.o it_read.o                it_disp.o   midi_write.o main.o  useful.o
+
+# converts MIDI to Impulse Tracker files
+OBJS2 = midi2it.o midi_read.o midi_write.o midi_disp.o it_write.o   main2.o useful.o companies.o controlnum.o
+
+# Examidi - lets you look at MIDI files in DETAIL
+OBJS3 = examidi.o midi_read.o midi_write.o midi_disp.o it_write.o   main3.o useful.o companies.o controlnum.o
+
+FLAGS = -c -g
+
+# ------------------------------------
+# Targets
+# ------------------------------------
+all:	it2midi midi2it examidi
+
+it2midi: $(OBJS1)
+	gcc $(OBJS1) -o it2midi
+
+midi2it: $(OBJS2)
+	gcc $(OBJS2) -o midi2it
+
+examidi: $(OBJS3)
+	gcc $(OBJS3) -o examidi
+
+# ------------------------------------
+# Impulse Tracker stuff
+# ------------------------------------
+it_read.o:
+	gcc $(FLAGS) it_read.c
+
+it_write.o:
+	gcc $(FLAGS) it_write.c
+
+it_disp.o:
+	gcc $(FLAGS) it_disp.c
+
+# ------------------------------------
+# MIDI stuff
+# ------------------------------------
+midi_read.o:
+	gcc $(FLAGS) midi_read.c
+
+midi_write.o:
+	gcc $(FLAGS) midi_write.c
+
+midi_disp.o:
+	gcc $(FLAGS) midi_disp.c
+
+# ------------------------------------
+# general stuff
+# ------------------------------------
+it2midi.o:
+	gcc $(FLAGS) it2midi.c
+
+midi2it.o:
+	gcc $(FLAGS) midi2it.c
+
+examidi.o:
+	gcc $(FLAGS) examidi.c
+
+main.o:	
+	gcc $(FLAGS) main.c 
+
+main2.o:	
+	gcc $(FLAGS) main2.c 
+
+useful.o:
+	gcc $(FLAGS) useful.c
+
+companies.o:
+	gcc $(FLAGS) companies.c
+
+controlnum.o:
+	gcc $(FLAGS) controlnum.c

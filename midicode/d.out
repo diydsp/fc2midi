@@ -1,0 +1,949 @@
+Song Name: .
+OrdNum:    9.
+InsNum:    3.
+SmpNum:    2.
+PatNum:    3.
+
+Cwt   :    2.22
+Cmwt  :    2.20
+
+Flags :    0x008d.
+	Stereo
+	Vol0MixOptimiztions: Off
+	Use instruments
+	Linear Slides
+	IT Effects
+	No link FX G mem w/ E/F
+	Do not use MIDI pitch controller
+	Request embedded MIDI config
+Special:   0x000e.
+	no song message
+	.
+	.
+	MIDI config embedded
+
+GV    :    128.
+MV    :    22.
+IS    :    12.
+IT    :    186.
+Sep   :    128.
+PWD   :    0.
+
+MsgLgth:   0.
+MsgOffset: 00000000.
+
+Channel Pan:
+0000: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+0010: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+0020: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+0030: 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+
+Channel Volume:
+0000: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+0010: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+0020: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+0030: 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 40 
+
+Orders:
+0000: 01 01 00 00 02 02 00 00 ff 
+
+OffsetInst:
+	0x00001423.
+	0x0000164d.
+	0x00001877.
+OffsetSamp:
+	0x00001aa1.
+	0x00001af1.
+OffsetPatt:
+	0x00001b41.
+	0x00001c24.
+	0x00001ce8.
+Pattern Data
+------------
+offset    :0x1b41.
+length    :0x00db.
+rows      :0x40.
+Pos: 0x00.
+channel = 0x00.
+Note   : 0x3e
+Inst   : 0x01
+Pos: 0x00.
+channel = 0x01.
+Inst   : 0x02
+Pos: 0x00.
+channel = 0x0a.
+Note   : 0x43
+Inst   : 0x01
+Pos: 0x00.
+Pos: 0x01.
+Pos: 0x02.
+channel = 0x01.
+Note   : 0x41
+Inst   : 0x01
+Pos: 0x02.
+channel = 0x09.
+Note   : 0x51
+Inst   : 0x02
+Pos: 0x02.
+Pos: 0x03.
+Pos: 0x04.
+channel = 0x02.
+Note   : 0x45
+Inst   : 0x01
+Pos: 0x04.
+channel = 0x07.
+Note   : 0x54
+Inst   : 0x01
+Pos: 0x04.
+Pos: 0x05.
+Pos: 0x06.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x06.
+channel = 0x09.
+Note   : 0x4d
+Same inst.
+Pos: 0x06.
+Pos: 0x07.
+Pos: 0x08.
+channel = 0x00.
+Note   : 0x86
+Same inst.
+Pos: 0x08.
+channel = 0x02.
+Note   : 0x4d
+Same inst.
+Pos: 0x08.
+channel = 0x00.
+Note   : 0x00
+Same inst.
+Pos: 0x08.
+Pos: 0x09.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x09.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x09.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x09.
+Pos: 0x0a.
+Pos: 0x0b.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x0b.
+channel = 0x08.
+Note   : 0x56
+Inst   : 0x01
+Pos: 0x0b.
+Pos: 0x0c.
+Pos: 0x0d.
+channel = 0x03.
+Note   : 0x48
+Inst   : 0x01
+Pos: 0x0d.
+channel = 0x08.
+Same note.
+Same inst.
+Pos: 0x0d.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x0d.
+channel = 0x0c.
+Same note.
+Same inst.
+Pos: 0x0d.
+Pos: 0x0e.
+Pos: 0x0f.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x0f.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x0f.
+channel = 0x03.
+Same note.
+Same inst.
+Pos: 0x0f.
+channel = 0x06.
+Note   : 0x51
+Inst   : 0x01
+Pos: 0x0f.
+Pos: 0x10.
+Pos: 0x11.
+channel = 0x01.
+Note   : 0x0a
+Inst   : 0x45
+Pos: 0x11.
+Pos: 0x12.
+Pos: 0x13.
+channel = 0x01.
+Note   : 0x85
+Inst   : 0x03
+Pos: 0x13.
+channel = 0x09.
+Note   : 0x01
+Inst   : 0x00
+Pos: 0x13.
+Pos: 0x14.
+channel = 0x00.
+Note   : 0x02
+Inst   : 0x0a
+Pos: 0x14.
+channel = 0x00.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x14.
+channel = 0x00.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x14.
+channel = 0x02.
+Note   : 0x0a
+Inst   : 0x3e
+Pos: 0x14.
+Pos: 0x15.
+Pos: 0x16.
+channel = 0x00.
+Note   : 0x04
+Inst   : 0x00
+Pos: 0x16.
+Pos: 0x17.
+channel = 0x09.
+Note   : 0x41
+Inst   : 0x00
+Pos: 0x17.
+Pos: 0x18.
+channel = 0x00.
+Note   : 0x02
+Inst   : 0x03
+Pos: 0x18.
+channel = 0x09.
+Note   : 0x39
+Inst   : 0x00
+Pos: 0x18.
+Pos: 0x19.
+channel = 0x01.
+Note   : 0x8a
+Inst   : 0x30
+Pos: 0x19.
+Pos: 0x1a.
+Pos: 0x1b.
+channel = 0x04.
+Same note.
+Same inst.
+Pos: 0x1b.
+channel = 0x09.
+Note   : 0x35
+Same inst.
+Pos: 0x1b.
+Pos: 0x1c.
+Pos: 0x1d.
+channel = 0x00.
+Note   : 0x8a
+Same inst.
+Pos: 0x1d.
+channel = 0x2f.
+Note   : 0x00
+Same inst.
+Pos: 0x1d.
+Pos: 0x1e.
+channel = 0x00.
+Note   : 0x04
+Same inst.
+Pos: 0x1e.
+channel = 0x09.
+Note   : 0x32
+Same inst.
+Pos: 0x1e.
+Pos: 0x1f.
+Pos: 0x20.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x20.
+Pos: 0x21.
+Pos: 0x22.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x22.
+channel = 0x04.
+Same note.
+Same inst.
+Pos: 0x22.
+channel = 0x09.
+Note   : 0x35
+Same inst.
+Pos: 0x22.
+Pos: 0x23.
+Pos: 0x24.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x24.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x24.
+Pos: 0x25.
+Pos: 0x26.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x26.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x26.
+channel = 0x09.
+Note   : 0x2d
+Same inst.
+Pos: 0x26.
+Pos: 0x27.
+channel = 0x01.
+Note   : 0x8a
+Same inst.
+Pos: 0x27.
+channel = 0x2f.
+Note   : 0x00
+Same inst.
+Pos: 0x27.
+channel = 0x01.
+Note   : 0x03
+Same inst.
+Pos: 0x27.
+channel = 0x09.
+Note   : 0x00
+Same inst.
+Pos: 0x27.
+Pos: 0x28.
+channel = 0x01.
+Note   : 0x8a
+Same inst.
+Pos: 0x28.
+channel = 0x20.
+Note   : 0x29
+Same inst.
+Pos: 0x28.
+Pos: 0x29.
+Pos: 0x2a.
+channel = 0x00.
+Note   : 0x02
+Same inst.
+Pos: 0x2a.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x2a.
+Pos: 0x2b.
+Pos: 0x2c.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x2c.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x2c.
+channel = 0x08.
+Same note.
+Same inst.
+Pos: 0x2c.
+channel = 0x09.
+Note   : 0x26
+Same inst.
+Pos: 0x2c.
+Pos: 0x2d.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x2d.
+Pos: 0x2e.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x2e.
+channel = 0x07.
+Same note.
+Same inst.
+Pos: 0x2e.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x2e.
+Pos: 0x2f.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x2f.
+Pos: 0x30.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x30.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x30.
+channel = 0x09.
+Note   : 0x29
+Same inst.
+Pos: 0x30.
+Pos: 0x31.
+Pos: 0x32.
+channel = 0x09.
+Same note.
+Same inst.
+Pos: 0x32.
+Pos: 0x33.
+0000: 81 03 3e 01 82 02 02 8b 03 43 01 00 00 82 03 41 
+0010: 01 8a 03 51 02 00 00 83 03 45 01 88 03 54 01 00 
+0020: 00 81 30 8a 21 4d 00 00 01 86 03 4d 01 00 00 83 
+0030: 30 0a 4a 00 00 01 89 03 56 01 00 00 84 03 48 01 
+0040: 89 30 0a 4d 00 00 01 82 30 84 30 87 03 51 01 00 
+0050: 00 02 0a 45 00 00 02 85 03 4a 01 00 00 01 02 0a 
+0060: 41 00 00 01 00 00 03 0a 3e 00 00 01 04 00 00 0a 
+0070: 41 00 00 01 02 03 0a 39 00 00 02 8a 30 00 00 85 
+0080: 30 8a 21 35 00 00 01 8a 30 00 00 01 04 8a 21 32 
+0090: 00 00 8a 30 00 00 01 05 8a 21 35 00 00 86 30 8a 
+00a0: 30 00 00 01 02 8a 21 2d 00 02 8a 30 00 02 03 0a 
+00b0: 00 00 02 8a 21 29 00 00 01 02 8a 30 00 00 01 02 
+00c0: 09 8a 21 26 00 8a 30 00 03 88 30 0a 00 0a 00 01 
+00d0: 87 30 8a 21 29 00 00 8a 30 00 00 
+Pattern Data
+------------
+offset    :0x1c24.
+length    :0x00bc.
+rows      :0x40.
+Pos: 0x00.
+channel = 0x00.
+Note   : 0x37
+Inst   : 0x01
+Pos: 0x00.
+channel = 0x01.
+Note   : 0x3a
+Inst   : 0x01
+Pos: 0x00.
+channel = 0x04.
+Note   : 0x46
+Inst   : 0x01
+Pos: 0x00.
+channel = 0x05.
+Note   : 0x4a
+Inst   : 0x01
+Pos: 0x00.
+Pos: 0x01.
+Pos: 0x02.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x02.
+channel = 0x02.
+Note   : 0x3e
+Inst   : 0x01
+Pos: 0x02.
+Pos: 0x03.
+Pos: 0x04.
+channel = 0x00.
+Note   : 0x85
+Inst   : 0x30
+Pos: 0x04.
+channel = 0x08.
+Note   : 0x56
+Inst   : 0x01
+Pos: 0x04.
+Pos: 0x05.
+Pos: 0x06.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x06.
+Pos: 0x07.
+Pos: 0x08.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x08.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x08.
+channel = 0x04.
+Same note.
+Same inst.
+Pos: 0x08.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x08.
+channel = 0x08.
+Same note.
+Same inst.
+Pos: 0x08.
+Pos: 0x09.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x09.
+Pos: 0x0a.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x0a.
+Pos: 0x0b.
+channel = 0x03.
+Note   : 0x43
+Inst   : 0x01
+Pos: 0x0b.
+channel = 0x05.
+Note   : 0x00
+Inst   : 0x84
+Pos: 0x0b.
+channel = 0x2f.
+Note   : 0x87
+Inst   : 0x03
+Pos: 0x0b.
+channel = 0x0e.
+Note   : 0x01
+Inst   : 0x00
+Pos: 0x0b.
+Pos: 0x0c.
+channel = 0x01.
+Note   : 0x87
+Inst   : 0x30
+Pos: 0x0c.
+Pos: 0x0d.
+Pos: 0x0e.
+channel = 0x00.
+Note   : 0x02
+Inst   : 0x03
+Pos: 0x0e.
+channel = 0x04.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x0e.
+channel = 0x07.
+Note   : 0x52
+Inst   : 0x01
+Pos: 0x0e.
+Pos: 0x0f.
+Pos: 0x10.
+channel = 0x04.
+Note   : 0x8a
+Inst   : 0x03
+Pos: 0x10.
+channel = 0x1a.
+Note   : 0x01
+Inst   : 0x00
+Pos: 0x10.
+Pos: 0x11.
+channel = 0x01.
+Note   : 0x88
+Inst   : 0x30
+Pos: 0x11.
+Pos: 0x12.
+Pos: 0x13.
+channel = 0x01.
+Note   : 0x03
+Inst   : 0x06
+Pos: 0x13.
+Pos: 0x14.
+channel = 0x05.
+Note   : 0x00
+Inst   : 0x03
+Pos: 0x14.
+channel = 0x05.
+Note   : 0x00
+Inst   : 0x04
+Pos: 0x14.
+Pos: 0x15.
+channel = 0x03.
+Note   : 0x09
+Inst   : 0x00
+Pos: 0x15.
+Pos: 0x16.
+channel = 0x01.
+Note   : 0x00
+Inst   : 0x06
+Pos: 0x16.
+Pos: 0x17.
+channel = 0x00.
+Note   : 0x02
+Inst   : 0x03
+Pos: 0x17.
+channel = 0x04.
+Note   : 0x06
+Inst   : 0x00
+Pos: 0x17.
+channel = 0x02.
+Note   : 0x00
+Inst   : 0x01
+Pos: 0x17.
+channel = 0x02.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x17.
+channel = 0x04.
+Note   : 0x8a
+Inst   : 0x30
+Pos: 0x17.
+Pos: 0x18.
+Pos: 0x19.
+channel = 0x07.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x19.
+channel = 0x04.
+Note   : 0x06
+Inst   : 0x00
+Pos: 0x19.
+Pos: 0x1a.
+channel = 0x05.
+Note   : 0x08
+Inst   : 0x00
+Pos: 0x1a.
+Pos: 0x1b.
+channel = 0x05.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x1b.
+channel = 0x01.
+Note   : 0x03
+Inst   : 0x06
+Pos: 0x1b.
+channel = 0x07.
+Note   : 0x00
+Inst   : 0x04
+Pos: 0x1b.
+Pos: 0x1c.
+channel = 0x00.
+Note   : 0x02
+Inst   : 0x03
+Pos: 0x1c.
+channel = 0x03.
+Note   : 0x05
+Inst   : 0x0a
+Pos: 0x1c.
+Pos: 0x1d.
+channel = 0x02.
+Note   : 0x00
+Inst   : 0x01
+Pos: 0x1d.
+channel = 0x06.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x1d.
+channel = 0x04.
+Note   : 0x07
+Inst   : 0x00
+Pos: 0x1d.
+Pos: 0x1e.
+channel = 0x06.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x1e.
+channel = 0x02.
+Note   : 0x00
+Inst   : 0x03
+Pos: 0x1e.
+Pos: 0x1f.
+channel = 0x08.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x1f.
+channel = 0x03.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x1f.
+channel = 0x01.
+Note   : 0x8a
+Inst   : 0x21
+Pos: 0x1f.
+channel = 0x13.
+Note   : 0x00
+Inst   : 0x00
+0000: 81 03 37 01 82 03 3a 01 85 03 46 01 86 03 4a 01 
+0010: 00 00 81 30 83 03 3e 01 00 00 01 85 30 89 03 56 
+0020: 01 00 00 82 30 00 00 02 83 30 05 86 30 89 30 00 
+0030: 06 00 06 00 84 03 43 01 06 00 84 30 87 03 4f 01 
+0040: 00 00 02 87 30 00 00 01 02 03 05 00 00 88 03 52 
+0050: 01 00 00 05 8a 03 5b 01 00 00 02 88 30 00 00 02 
+0060: 03 06 00 06 00 03 06 00 04 00 04 09 00 00 02 00 
+0070: 06 00 01 02 03 05 06 00 03 00 01 03 00 00 05 8a 
+0080: 30 00 00 08 00 00 05 06 00 00 06 08 00 00 06 00 
+0090: 00 02 03 06 08 00 04 00 01 02 03 04 05 0a 00 03 
+00a0: 00 01 07 00 00 05 07 00 00 07 00 00 03 00 03 00 
+00b0: 09 00 00 04 00 00 02 8a 21 54 00 00 
+Pattern Data
+------------
+offset    :0x1ce8.
+length    :0x008e.
+rows      :0x40.
+Pos: 0x00.
+channel = 0x00.
+Note   : 0x35
+Inst   : 0x01
+Pos: 0x00.
+Pos: 0x01.
+channel = 0x01.
+Note   : 0x38
+Inst   : 0x01
+Pos: 0x01.
+Pos: 0x02.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x02.
+Pos: 0x03.
+Pos: 0x04.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x04.
+channel = 0x02.
+Note   : 0x3c
+Inst   : 0x01
+Pos: 0x04.
+Pos: 0x05.
+Pos: 0x06.
+channel = 0x00.
+Note   : 0x86
+Inst   : 0x03
+Pos: 0x06.
+channel = 0x07.
+Note   : 0x01
+Inst   : 0x00
+Pos: 0x06.
+Pos: 0x07.
+channel = 0x00.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x07.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x07.
+Pos: 0x08.
+Pos: 0x09.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x09.
+channel = 0x06.
+Note   : 0x4d
+Inst   : 0x01
+Pos: 0x09.
+Pos: 0x0a.
+Pos: 0x0b.
+channel = 0x00.
+Note   : 0x00
+Inst   : 0x00
+Pos: 0x0b.
+channel = 0x00.
+Note   : 0x06
+Inst   : 0x00
+Pos: 0x0b.
+channel = 0x01.
+Note   : 0x00
+Inst   : 0x02
+Pos: 0x0b.
+Pos: 0x0c.
+Pos: 0x0d.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x0d.
+Pos: 0x0e.
+Pos: 0x0f.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x0f.
+Pos: 0x10.
+Pos: 0x11.
+channel = 0x03.
+Note   : 0x41
+Inst   : 0x01
+Pos: 0x11.
+Pos: 0x12.
+channel = 0x04.
+Note   : 0x44
+Inst   : 0x01
+Pos: 0x12.
+Pos: 0x13.
+channel = 0x04.
+Same note.
+Same inst.
+Pos: 0x13.
+Pos: 0x14.
+Pos: 0x15.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x15.
+Pos: 0x16.
+Pos: 0x17.
+Pos: 0x18.
+Pos: 0x19.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x19.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x19.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x19.
+Pos: 0x1a.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x1a.
+Pos: 0x1b.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x1b.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x1b.
+Pos: 0x1c.
+Pos: 0x1d.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x1d.
+Pos: 0x1e.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x1e.
+Pos: 0x1f.
+channel = 0x03.
+Same note.
+Same inst.
+Pos: 0x1f.
+Pos: 0x20.
+Pos: 0x21.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x21.
+Pos: 0x22.
+Pos: 0x23.
+Pos: 0x24.
+Pos: 0x25.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x25.
+Pos: 0x26.
+Pos: 0x27.
+channel = 0x03.
+Same note.
+Same inst.
+Pos: 0x27.
+Pos: 0x28.
+Pos: 0x29.
+channel = 0x00.
+Same note.
+Same inst.
+Pos: 0x29.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x29.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x29.
+Pos: 0x2a.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x2a.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x2a.
+Pos: 0x2b.
+channel = 0x01.
+Same note.
+Same inst.
+Pos: 0x2b.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x2b.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x2b.
+Pos: 0x2c.
+Pos: 0x2d.
+channel = 0x02.
+Same note.
+Same inst.
+Pos: 0x2d.
+Pos: 0x2e.
+Pos: 0x2f.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x2f.
+Pos: 0x30.
+Pos: 0x31.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x31.
+Pos: 0x32.
+channel = 0x04.
+Same note.
+Same inst.
+Pos: 0x32.
+Pos: 0x33.
+channel = 0x04.
+Same note.
+Same inst.
+Pos: 0x33.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x33.
+Pos: 0x34.
+Pos: 0x35.
+Pos: 0x36.
+Pos: 0x37.
+channel = 0x05.
+Same note.
+Same inst.
+Pos: 0x37.
+channel = 0x06.
+Same note.
+Same inst.
+Pos: 0x37.
+Pos: 0x38.
+0000: 81 03 35 01 00 82 03 38 01 00 82 30 00 00 81 30 
+0010: 83 03 3c 01 00 00 01 86 03 48 01 00 00 01 00 00 
+0020: 86 30 00 00 01 87 03 4d 01 00 00 01 00 00 01 06 
+0030: 00 02 00 02 00 00 83 30 00 00 03 00 00 84 03 41 
+0040: 01 00 85 03 44 01 00 85 30 00 00 06 00 00 00 00 
+0050: 01 03 87 30 00 02 00 03 06 00 00 01 00 02 00 84 
+0060: 30 00 00 06 00 00 00 00 06 00 00 04 00 00 01 03 
+0070: 07 00 02 07 00 02 03 07 00 00 03 00 00 07 00 00 
+0080: 06 00 05 00 05 07 00 00 00 00 06 07 00 00 

@@ -1,0 +1,7 @@
+Paula.lo: Paula.cpp Paula.h MyTypes.h Config.h
+
+Paula.h:
+
+MyTypes.h:
+
+Config.h:

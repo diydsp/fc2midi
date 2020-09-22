@@ -1,0 +1,8 @@
+typedef struct
+{
+  unsigned int ID;
+  char *name;
+} ControlNum;
+
+void LookupContNum(unsigned int,char *);
+

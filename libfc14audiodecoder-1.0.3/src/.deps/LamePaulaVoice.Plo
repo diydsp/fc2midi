@@ -1,0 +1,10 @@
+LamePaulaVoice.lo: LamePaulaVoice.cpp LamePaula.h Paula.h MyTypes.h \
+ Config.h
+
+LamePaula.h:
+
+Paula.h:
+
+MyTypes.h:
+
+Config.h:

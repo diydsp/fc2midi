@@ -1,0 +1,46 @@
+argv[1]: c.mid.
+argv[2]: cc.it.
+MIDI file header
+----------------
+Length    :0x00000006.
+Format    :0x0001.
+NumTracks :0x0002.
+PPQN      :0x0180.
+
+Track #0. (zero-based)
+----------
+len :  0x0000001f.
+time:  00000000:Special non-MIDI event: Time Signature  : (0x04,0x02,0x18,0x08)
+time:  00000000:Special non-MIDI event: Tempo           : (0x09,0xa3,0x1a)
+time:  00000000:Special non-MIDI event: Text message type 0x03,len 0x08
+"SEQ00001"
+time:  00000000:Special non-MIDI event: End of Track.
+
+Track #1. (zero-based)
+----------
+len :  0x0000004c.
+time:  00000000:controller:       (0xb0,0x00,0x00) Bank Select.
+time:  00000000:controller:       (0xb0,0x20,0x00) Bank Select (fine).
+time:  00000000:program change:   (0xc0,0x01).
+time:  00000000:controller:       (0xb0,0x07,0x7f) Volume (coarse).
+time:  00000000:controller:       (0xb0,0x0a,0x40) Pan position (coarse).
+time:  00000000:controller:       (0xb0,0x01,0x00) Modulation Wheel (coarse).
+time:  00000000:controller:       (0xb0,0x0b,0x7f) Expression (coarse).
+time:  00000000:controller:       (0xb0,0x46,0x00) Sound Variation.
+time:  00000000:controller:       (0xb0,0x00,0x40) Bank Select.
+time:  00000000:note on:          (0x90,0x46,0x7f) A#4.
+time:  00000004:note on:          (0x90,0x48,0x7f) C-5.
+time:  00000006:note on:          (0x90,0x46,0x7f) A#4.
+time:  0000000a:note on:          (0x90,0x43,0x7f) G-4.
+time:  0000000c:note on:          (0x90,0x45,0x7f) A-4.
+time:  00000010:note on:          (0x90,0x46,0x7f) A#4.
+time:  00000012:note on:          (0x90,0x45,0x7f) A-4.
+time:  00000016:note on:          (0x90,0x41,0x7f) F-4.
+time:  00000018:note on:          (0x90,0x43,0x7f) G-4.
+time:  0000001c:note on:          (0x90,0x41,0x7f) F-4.
+time:  0000001e:note on:          (0x90,0x40,0x7f) E-4.
+time:  00000022:note on:          (0x90,0x41,0x7f) F-4.
+time:  00000024:note on:          (0x90,0x43,0x7f) G-4.
+time:  0000002a:note on:          (0x90,0x4a,0x7f) D-5.
+time:  0000002a:Special non-MIDI event: End of Track.
+

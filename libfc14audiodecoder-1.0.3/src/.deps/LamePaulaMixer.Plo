@@ -1,0 +1,10 @@
+LamePaulaMixer.lo: LamePaulaMixer.cpp LamePaula.h Paula.h MyTypes.h \
+ Config.h
+
+LamePaula.h:
+
+Paula.h:
+
+MyTypes.h:
+
+Config.h:

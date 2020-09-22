@@ -1,0 +1,11 @@
+typedef unsigned char byte;
+
+void bin_disp(byte *,int);
+
+unsigned long    longat(unsigned char *);
+unsigned long Biglongat(unsigned char *);
+unsigned int     intat (unsigned char *);
+unsigned int  Bigintat (unsigned char *);
+
+void splitup32(long,unsigned char []);
+

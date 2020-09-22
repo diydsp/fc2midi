@@ -1,0 +1,68 @@
+#include <string.h>
+#include "companies.h"
+
+MIDImfr MfrID[] = {
+  {"Sequential Circuits ", 0x01},
+  {"Big Briar           ", 0x02},
+  {"Octave / Plateau    ", 0x03},
+  {"Moog                ", 0x04},
+  {"Passport Designs    ", 0x05},
+  {"Lexicon             ", 0x06},
+  {"Kurzweil            ", 0x07},
+  {"Fender              ", 0x08},
+  {"Gulbransen          ", 0x09},
+  {"Delta Labs          ", 0x0A},
+  {"Sound Comp.         ", 0x0B},
+  {"General Electro     ", 0x0C},
+  {"Techmar             ", 0x0D},
+  {"Matthews Research   ", 0x0E},
+  {"Ensoniq             ", 0x0F},
+  {"Oberheim            ", 0x10},
+  {"PAIA                ", 0x11},
+  {"Simmons             ", 0x12},
+  {"Gentle Electric     ", 0x13},
+  {"Fairlight           ", 0x14},
+  {"Peavey              ", 0x1B},
+  {"JL Cooper           ", 0x15},
+  {"Lowery              ", 0x16},
+  {"Lin                 ", 0x17},
+  {"Emu                 ", 0x18},
+  {"Bon Tempi           ", 0x20},
+  {"S.I.E.L.            ", 0x21},
+  {"SyntheAxe           ", 0x23},
+  {"Hohner              ", 0x24},
+  {"Crumar              ", 0x25},
+  {"Solton              ", 0x26},
+  {"Jellinghaus Ms      ", 0x27},
+  {"CTS                 ", 0x28},
+  {"PPG                 ", 0x29},
+  {"Elka                ", 0x2F},
+  {"Kawai               ", 0x40},
+  {"Roland              ", 0x41},
+  {"Korg                ", 0x42},
+  {"Yamaha              ", 0x43},
+  {"Casio               ", 0x44},
+  {"Akai                ", 0x45},
+  {"Educational Use     ", 0x7D},
+  {"Non-RealTime ID     ", 0x7E},
+  {"RealTime ID         ", 0x7F},
+  {"argh.               ", 0xffff},
+};
+
+void LookupManuID(unsigned int val,char *name)
+{
+  int i=0;
+
+  do
+  {
+    if(val==MfrID[i].ID)
+    {
+      strcpy(name,MfrID[i].name);
+      return;
+    }
+    i++;
+  } while (MfrID[i].ID!=0xffff);
+
+  strcpy(name,"Unknown.");
+}
+

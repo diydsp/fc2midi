@@ -1,0 +1,2 @@
+int examidi(FILE *mf);
+
