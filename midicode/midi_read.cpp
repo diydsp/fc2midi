@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdint.h>
+
 #include "useful.h"
 #include "midi_types.h"
 #include "midi_read.h"
